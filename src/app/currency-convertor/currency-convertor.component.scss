@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&display=swap');
+.currency-converter {
+  color: white;
+  background: #11998e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #38ef7d,
+    #11998e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #38ef7d,
+    #11998e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 44px;
+  font-family: 'Biryani', sans-serif;
+  font-weight: 700;
+  gap: 60px;
+  input {
+    background: transparent;
+    border: none;
+    border-bottom:4px solid white;
+    font-family: 'Biryani', sans-serif;
+    font-size: 44px;
+    text-align: center;
+    color:white;
+    font-weight: 800;
+    &:active, &:focus {
+  
+      outline: none;
+     
+      border-bottom:4px solid white;
+    }
+  }
+  button {
+    background: white;
+    color: #11998e;
+   border:none;
+    padding: 10px 20px;
+    font-family: 'Biryani', sans-serif;
+    font-size: 22px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+}

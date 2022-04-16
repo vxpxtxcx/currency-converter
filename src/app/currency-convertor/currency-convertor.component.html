@@ -1,0 +1,17 @@
+<div class="currency-converter">
+  <label>Price in USD</label>
+  <input
+    class="currency-converter__input"
+    placeholder="Enter value in USD"
+    [(ngModel)]="price_in_usd"
+  />
+  <!--COnvert currency on click-->
+  <button class="currency-converter__button" (click)="convertUsdToInr()">
+    Convert
+  </button>
+
+  <div class="currency-converter__result">
+    <label>Price in INR</label>
+  </div>
+  <div>{{ price_in_inr | currency: "INR" }}</div>
+</div>
